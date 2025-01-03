@@ -1,0 +1,41 @@
+* things to remember to add in new linux/bsd installs
+
+** add this stuff to your ~/.xinitrc
+
+*** if on bsd
+
+copy/paste:
+
+sxhkd &
+
+sleep 20 && xmodmap ~/.Xmodmap &
+
+exec bspwm
+
+This is the ~/.Xmodmap file:
+
+clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L
+add Lock = Control_R
+
+
+* testing (rewrite some of the binds
+
+
+;; Bind dashboard commands to custom keys
+(global-set-key (kbd "C-c d") 'dashboard-open)       ;; Open dashboard
+(global-set-key (kbd "C-c f") 'dashboard-open-recent-files) ;; Open recent files
+(global-set-key (kbd "C-c b") 'dashboard-open-bookmarks) ;; Open bookmarks
+(global-set-key (kbd "C-c a") 'org-agenda)            ;; Show agenda
+
+
+(global-set-key (kbd "C-c d") 'dashboard-open)
+
+
+* remember
+
+get python code snippets
+get prescient package
+dashboard line numbers

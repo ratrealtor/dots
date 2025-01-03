@@ -1,0 +1,155 @@
+# Fonts you need: nerd-fonts-complete
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """$package$all$git_branch$git_status$character"""
+# format = """$git_branch$git_status$package$all$character"""
+right_format = """$battery"""
+
+
+[character]
+success_symbol = "[](magenta)[](magenta)[](magenta)"
+error_symbol = "[](bold red)[](bold red)[](bold red)"
+vicmd_symbol = "[](bold green)"
+
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󱧥 "
+discharging_symbol = "󱟤 "
+
+
+[cmd_duration]
+min_time = 50000
+format = "took [$duration](bold yellow)"
+
+
+[[battery.display]]
+threshold = 10000
+style = "yellow"
+
+
+[hostname]
+ssh_only = false
+format =  "[$hostname](bold cyan) "
+trim_at = ".companyname.com"
+disabled = true
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold blue"
+disabled = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = " "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style)) '
+style = "bold red"
+ahead = ">"
+behind = "<"
+diverged = "<>"
+up_to_date = ""
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = "+"
+renamed = "r"
+deleted = "x"
+disabled = false
+
+
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[package]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[dart]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[docker_context]
+symbol = " "
+
+[nodejs]
+format = 'via \[[$symbol($version)]($style)\]'
+
+[elixir]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[elm]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[golang]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[java]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[julia]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[nix_shell]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[lua]
+format = ' '
+
+[perl]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[php]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[python]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[ruby]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[rust]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[scala]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[shlvl]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[swift]
+symbol = "ﯣ "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[zig]
+symbol = " "
+format = 'via \[[$symbol($version)]($style)\] '
+
+[vlang]
+format = 'via \[[$symbol($version)]($style)\] '
