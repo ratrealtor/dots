@@ -1,16 +1,9 @@
-
-number = 5
-
-print("Countdown!")
-
 while True:
-    
-  print(number)
-  
-  number = number - 1
-  
-  if number <= 0:
-      
-    break
+    number = int(input("Please type in a number, -1 to quit: "))
 
-print("Now!")
+    if number == -1:
+        break
+
+    print(number ** 2)
+
+print("Thanks and bye!")
